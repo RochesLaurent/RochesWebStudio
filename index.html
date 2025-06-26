@@ -1,11 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RochesWebStudio</title>
+    <meta name="description" content="RochesWebStudio - Création de sites web sur-mesure pour micro-entreprises et PME. Sites vitrines, outils métier et solutions web modernes.">
+    <meta name="keywords" content="création site web, développeur web, micro-entreprise, PME, site vitrine, développement web">
+    <meta name="author" content="RochesWebStudio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rocheswebstudio.fr/">
+    <meta property="og:title" content="RochesWebStudio - Création de sites web pour micro-entreprises">
+    <meta property="og:description" content="Donnez vie à votre présence en ligne avec des sites web sur-mesure. Simple, efficace, professionnel.">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rocheswebstudio.fr/">
+    <meta property="twitter:title" content="RochesWebStudio - Création de sites web pour micro-entreprises">
+    <meta property="twitter:description" content="Donnez vie à votre présence en ligne avec des sites web sur-mesure. Simple, efficace, professionnel.">
+    <meta property="twitter:image" content="/images/twitter-image.jpg">
+    
+    <title>RochesWebStudio - Création de sites web pour micro-entreprises et PME</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts (exemple avec Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "RochesWebStudio",
+        "description": "Création de sites web sur-mesure pour micro-entreprises et PME",
+        "url": "https://rocheswebstudio.fr",
+        "serviceType": "Développement Web",
+        "areaServed": "France",
+        "priceRange": "€€"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to content pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     
+    <!-- Header / Navigation (optionnel pour une landing page) -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#hero" aria-label="RochesWebStudio - Accueil">
+                        <span class="logo-text">RochesWebStudio</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" role="list">
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#pricing" class="nav-link">Tarifs</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero" role="banner">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Donnez vie à votre présence en ligne</h1>
+                        <p class="hero-subtitle">Création de sites web sur-mesure pour micro-entreprises et PME. Simple, efficace, professionnel.</p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary" role="button">Discutons de votre projet</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-mockup">
+                            <!-- Placeholder pour illustration/mockup -->
+                            <img src="/images/hero-mockup.svg" alt="" class="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Mes réalisations</h2>
+                    <p class="section-subtitle">Découvrez quelques projets qui illustrent mon savoir-faire</p>
+                </header>
+                
+                <div class="portfolio-grid">
+                    <!-- Projet 1: Alex Nettoyage -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="/images/portfolio/alex-nettoyage.jpg" alt="Capture d'écran du site Alex Nettoyage" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <a href="https://vitr-alex-nettoyage.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link" aria-label="Voir le site Alex Nettoyage (ouvre dans un nouvel onglet)">
+                                    <span class="portfolio-icon" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Alex Nettoyage</h3>
+                            <p class="portfolio-description">Site vitrine pour artisan - Design épuré et responsive</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Site vitrine</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2: JDR Connexion -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="/images/portfolio/jdr-connexion.jpg" alt="Capture d'écran de la plateforme JDR Connexion" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.jdrconnexion.fr/" target="_blank" rel="noopener noreferrer" class="portfolio-link" aria-label="Voir JDR Connexion (ouvre dans un nouvel onglet)">
+                                    <span class="portfolio-icon" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">JDR Connexion</h3>
+                            <p class="portfolio-description">Plateforme communautaire - Gestion d'utilisateurs et contenu</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Plateforme</span>
+                                <span class="tag">Communauté</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3: AutoFlow -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="/images/portfolio/autoflow.jpg" alt="Capture d'écran de l'application AutoFlow" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status">En développement</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">AutoFlow</h3>
+                            <p class="portfolio-description">SaaS de gestion - Solution complète pour entreprises</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">SaaS</span>
+                                <span class="tag">Gestion</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 4: Exemple fictif -->
+                    <article class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="/images/portfolio/ecommerce-local.jpg" alt="Mockup d'un site e-commerce local" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-status">Concept</div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Commerce Local</h3>
+                            <p class="portfolio-description">Site e-commerce - Boutique en ligne avec gestion stocks</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Local</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Pourquoi choisir RochesWebStudio ?</h2>
+                    <p class="section-subtitle">Des solutions web adaptées à vos besoins et votre budget</p>
+                </header>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Rapidité</h3>
+                        <p class="service-description">Livraison en 2-3 semaines maximum. Votre site en ligne rapidement pour ne pas perdre d'opportunités.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Sur-mesure</h3>
+                        <p class="service-description">Chaque site adapté à votre activité et vos objectifs. Pas de template générique.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <path d="M20 8v6M23 11l-3 3-3-3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Accompagnement</h3>
+                        <p class="service-description">Support technique et conseils inclus. Je vous aide même après la mise en ligne.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Expertise</h3>
+                        <p class="service-description">Développeur expérimenté utilisant les technologies modernes pour des sites performants.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Mes prestations</h2>
+                    <p class="section-subtitle">Des solutions adaptées à tous les budgets</p>
+                </header>
+                
+                <div class="pricing-grid">
+                    <!-- Landing Page -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Landing Page</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">À partir de 300€</span>
+                            <span class="price-period">HT</span>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>1 page optimisée</li>
+                            <li>Design responsive</li>
+                            <li>Formulaire de contact</li>
+                            <li>Optimisation SEO de base</li>
+                            <li>Livraison rapide</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" role="button">Demander un devis</a>
+                    </div>
+
+                    <!-- Site Vitrine -->
+                    <div class="pricing-card pricing-featured">
+                        <div class="pricing-badge">Populaire</div>
+                        <h3 class="pricing-title">Site Vitrine</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">À partir de 700€</span>
+                            <span class="price-period">HT</span>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>5-7 pages complètes</li>
+                            <li>Design sur-mesure</li>
+                            <li>Responsive tous écrans</li>
+                            <li>Optimisation SEO avancée</li>
+                            <li>Formulaires personnalisés</li>
+                            <li>Formation à la mise à jour</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" role="button">Demander un devis</a>
+                    </div>
+
+                    <!-- Site + Outils -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Site + Outils</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">À partir de 1200€</span>
+                            <span class="price-period">HT</span>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>Site vitrine complet</li>
+                            <li>Fonctionnalités métier</li>
+                            <li>Espace d'administration</li>
+                            <li>Gestion de contenu</li>
+                            <li>Outils personnalisés</li>
+                            <li>Formation approfondie</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" role="button">Demander un devis</a>
+                    </div>
+
+                    <!-- Sur-mesure -->
+                    <div class="pricing-card">
+                        <h3 class="pricing-title">Sur-mesure</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">Devis personnalisé</span>
+                        </div>
+                        <ul class="pricing-features" role="list">
+                            <li>Applications web complexes</li>
+                            <li>Solutions SaaS</li>
+                            <li>Intégrations spécifiques</li>
+                            <li>Architecture évolutive</li>
+                            <li>Support technique avancé</li>
+                            <li>Accompagnement projet</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" role="button">Discutons ensemble</a>
+                    </div>
+                </div>
+
+                <!-- Services additionnels -->
+                <div class="additional-services">
+                    <h3 class="additional-title">Services additionnels</h3>
+                    <div class="additional-grid">
+                        <div class="additional-item">
+                            <span class="additional-service">Hébergement</span>
+                            <span class="additional-price">À partir de 5€/mois</span>
+                        </div>
+                        <div class="additional-item">
+                            <span class="additional-service">Nom de domaine</span>
+                            <span class="additional-price">15€/an</span>
+                        </div>
+                        <div class="additional-item">
+                            <span class="additional-service">Maintenance</span>
+                            <span class="additional-price">50€ HT/ticket email</span>
+                            <button class="info-trigger" aria-label="Informations sur la maintenance" data-tooltip="maintenance">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M9,9h0a3,3,0,0,1,6,0c0,2-3,3-3,3"/>
+                                    <path d="M12,17h0"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-notes">
+                        <p><small>Prix HT - TVA non applicable, art. 293 B du CGI</small></p>
+                        <p><small>Hébergement et nom de domaine facturés séparément</small></p>
+                        <p><small>Devis détaillé fourni avant tout projet</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Parlons de votre projet</h2>
+                    <p class="section-subtitle">Décrivez-moi vos besoins, je vous réponds sous 24h</p>
+                </header>
+                
+                <div class="contact-content">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom / Prénom <span class="required" aria-label="obligatoire">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+                            <div id="name-error" class="form-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email <span class="required" aria-label="obligatoire">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                            <div id="email-error" class="form-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type" class="form-label">Type de projet</label>
+                            <select id="project-type" name="project-type" class="form-select">
+                                <option value="">Sélectionnez un type</option>
+                                <option value="landing-page">Landing Page</option>
+                                <option value="site-vitrine">Site Vitrine</option>
+                                <option value="site-outils">Site + Outils</option>
+                                <option value="sur-mesure">Sur-mesure</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget approximatif</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="<1000">Moins de 1000€</option>
+                                <option value="1000-2000">1000€ - 2000€</option>
+                                <option value="2000-5000">2000€ - 5000€</option>
+                                <option value=">5000">Plus de 5000€</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message <span class="required" aria-label="obligatoire">*</span></label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" required aria-describedby="message-error" placeholder="Décrivez votre projet, vos objectifs, vos contraintes..."></textarea>
+                            <div id="message-error" class="form-error" role="alert"></div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">Envoyer ma demande</button>
+                            <p class="form-note"><small>Réponse sous 24h</small></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">RochesWebStudio</span>
+                    <p class="footer-tagline">Création de sites web</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#mentions-legales" class="footer-link">Mentions légales</a>
+                    <a href="#cgv" class="footer-link">CGV</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <a href="mailto:contact@rocheswebstudio.fr" class="footer-email">contact@rocheswebstudio.fr</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 RochesWebStudio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tooltip pour maintenance -->
+    <div id="maintenance-tooltip" class="tooltip" role="tooltip" aria-hidden="true">
+        <div class="tooltip-content">
+            <h4 class="tooltip-title">Que comprend un ticket de maintenance ?</h4>
+            <div class="tooltip-section">
+                <strong>Inclus dans un ticket :</strong>
+                <ul>
+                    <li>Modification de textes et images</li>
+                    <li>Ajout/suppression de contenu (1-2 pages max)</li>
+                    <li>Mise à jour des informations (horaires, tarifs, coordonnées)</li>
+                    <li>Correction de bugs mineurs</li>
+                    <li>Sauvegarde et mise à jour sécurité</li>
+                    <li>Support technique par email</li>
+                </ul>
+            </div>
+            <div class="tooltip-section">
+                <strong>Délai de traitement :</strong> 48-72h ouvrées
+            </div>
+            <div class="tooltip-section">
+                <strong>Non inclus :</strong>
+                <ul>
+                    <li>Refonte graphique majeure</li>
+                    <li>Ajout de nouvelles fonctionnalités complexes</li>
+                    <li>Modifications structurelles importantes</li>
+                    <li>Formation à l'utilisation</li>
+                </ul>
+            </div>
+            <p class="tooltip-note"><em>Pour des besoins plus importants, un devis spécifique sera établi.</em></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
